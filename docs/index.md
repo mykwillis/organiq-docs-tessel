@@ -41,8 +41,8 @@ See [Hello, Organiq!](hello.md) to walk through building this 'Blinker' example 
 
 ### Contribute
 
-Organiq on Tessel is part of the [organiq-js](https://github.com/organiq/organiq-js) project on GitHub.
+Organiq on Tessel is part of the [Organiq SDK for JavaScript](https://github.com/organiq/organiq-sdk-js), available on GitHub.
 
-* Issue Tracker: <https://github.com/organiq/organiq-js/issues>
-* Source Code: <https://github.com/organiq/organiq-js>
+* Issue Tracker: <https://github.com/organiq/organiq-sdk-js/issues>
+* Source Code: <https://github.com/organiq/organiq-sdk-js>
 

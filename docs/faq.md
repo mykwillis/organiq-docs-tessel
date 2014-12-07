@@ -26,4 +26,7 @@ There is currently no publicly-available Organiq web service. You need to run yo
 
 There is no support for authentication or authorization in the development version of the Organiq server. This means that any application that can reach your Organiq server can connect to and potentially do crazy things with your Tessel. It's probably not a good idea to host the development server on any internet-accessible hosts.
 
+### Organiq?
+
+Like "organic."
 

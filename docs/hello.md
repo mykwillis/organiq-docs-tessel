@@ -83,3 +83,9 @@ When the Tessel has connected successfully to Organiq, run the `blink-app` appli
     $ node blink-app.js
 
 Note that while we've run the `blink-app` application from the same machine to which your Tessel is connected, that needn't be the case. As long as it can connect to the Organiq server, it can run from anywhere.
+
+Note: if you get an error like
+
+    Error: Cannot find module 'organiq'
+
+When trying to `node blink-app.js`, make sure your NODE_PATH environment variable is set to include your NPM installations global directory.  See [this post on Stack Overflow](http://stackoverflow.com/a/9588052/925478) for more information.

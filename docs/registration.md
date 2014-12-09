@@ -16,7 +16,7 @@ Devices are registered in the device registry with `organiq.registerDevice`:
     organiq.registerDevice('MyDevice', device)
         .then(function(d) { console.log('successfully registered.'); });
 
-Upon successful completion, the device registry will have an entry named 'MyDevice' that can be used to get a reference to the provded device object
+Upon successful completion, the device registry will have an entry named 'MyDevice' that can be used to get a reference to the provided device object
 (`device`).
 
 ## Discovering Devices

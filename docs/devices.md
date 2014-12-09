@@ -73,12 +73,14 @@ To expose this to external applications as a property getter on a Device object,
 
 We can make this a little less verbose by using [node.lift](https://github.com/cujojs/when/blob/master/docs/api.md#nodelift) from the [when.js](https://github.com/cujojs/when) library. This function will automatically convert a Node.js-style callback to one that returns a promise, which is just what we need:
 
-    // ...
-    var nodefn =  require('when/node');
-    var promisedHumidity = nodefn.lift(climate.readHumidity).bind(climate);
-    organiq.registerDevice('ClimateDevice', {
-        get humidity() { return promisedHumidity(); }
-    });
+```JavaScript
+// ...
+var nodefn =  require('when/node');
+var promisedHumidity = nodefn.lift(climate.readHumidity).bind(climate);
+organiq.registerDevice('ClimateDevice', {
+    get humidity() { return promisedHumidity(); }
+});
+```
 
 See [Asynchronous Operations with Promises](promises.md) for more background.
 
@@ -86,10 +88,12 @@ See [Asynchronous Operations with Promises](promises.md) for more background.
 
 Properties can be defined on Device objects just like methods. You can define constant properties as primitive values, though more commonly you'll use JavaScript getters:
 
-    var implementation = {
-        version: 1.2,   // a simple property
-        get curTime(): { return new Date().getTime(); }
-    }
+```JavaScript
+var implementation = {
+    version: 1.2,   // a simple property
+    get curTime(): { return new Date().getTime(); }
+}
+```
 
 Just like with methods, you can use promises to implement asynchronous property getters:
 

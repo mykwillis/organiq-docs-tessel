@@ -1,6 +1,6 @@
 # Command Line Interface
 
-The `organiq` package includes a Command Line Interface that can be used to interact manage the local development server and initialize configuration files.
+The `organiq` package includes a Command Line Interface that can be used to manage the local development server and initialize configuration files.
 
  
 ### Useful Commands

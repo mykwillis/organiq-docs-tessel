@@ -11,10 +11,9 @@ When using the development version of the Organiq server included in this packag
 ## Registering Devices
 
 Devices are registered in the device registry with `organiq.registerDevice`:
-    
-    var device = new organiq.Device({/* device def'n */});
-    organiq.registerDevice('MyDevice', device)
-        .then(function(d) { console.log('successfully registered.'); });
+
+    var device = { doSomething: function() { /*...*/ } };
+    organiq.registerDevice('MyDevice', device);
 
 Upon successful completion, the device registry will have an entry named 'MyDevice' that can be used to get a reference to the provided device object
 (`device`).

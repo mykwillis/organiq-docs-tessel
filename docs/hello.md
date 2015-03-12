@@ -20,8 +20,9 @@ Create a directory for the new project, and initialize NPM in it:
 
 Now install the Tessel-specific Organiq library (`organiq-tessel`). This library has the same interface as the one in the core `organiq` package, but is made specifically to run in the Tessel environment.
 
-    npm install --save organiq-tessel
+    npm install --save --production organiq-tessel
 
+The use of the `--production` option minimizes the number of packages installed, making the deployment to Tessel smaller and faster.
 
 ### Exposing a Method to Toggle our Device's LED
 
@@ -56,12 +57,12 @@ Save the code as `blink-app.js`.
 It is convenient to run a private development version of the Organiq web services locally when developing new applications. [It's also currently ***required*** to do so, because the public Organiq web services are not yet available.] You can start a new instance of the development server as follows:
 
     $ organiq server start
-    Organiq development server v0.0.3 started on port 1340
+    Organiq development server v0.2.0 started on port 1340
 
 When using a local server, it is necessary to configure devices and applications with the server's location. This can be done by placing an `organiq.json` file in the application directory that contains the necessary configuration.  A simple configuration file for local development can be created like this:
 
     $ organiq init --local-dev
-    Initialized organiq.json with API root: http://<ip-address>:1340
+    Initialized organiq.json with API root: ws://<ip-address>:1340
 
 
 ### Watch it Blink!

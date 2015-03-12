@@ -6,21 +6,14 @@ When working with Tessel, you will normally create exactly one Device object to 
 
 ## Creating Device Objects
 
-You define the methods you want to expose to external applications by passing an implementation object to the `organiq.Device` constructor.
-
-    var device = new organiq.Device({
-        sayHello: function() { console.log('Hello'); },
-        sayGoodbye: function() { console.log('Goodbye'); }
-        });
-
-You can also pass your implementation object directly to `registerDevice` and it will create the Device object for you:
+You define the methods you want to expose to external applications by passing an implementation object to the `organiq.registerDevice` method.
 
     organiq.registerDevice('MyDevice', {
         sayHello: function() { console.log('Hello'); },
         sayGoodbye: function() { console.log('Goodbye'); }
         });
 
-This being done, other applications can get a reference to your device by name using `getDevice`. The methods you defined on your implementation object can be invoked directly on the returned reference, as if they were implemented locally:
+This being done, other applications can get a reference to your device by name using `organiq.getDevice`. The methods you defined on your implementation object can be invoked directly on the returned reference, as if they were implemented locally:
 
     organiq.getDevice('MyDevice').then(function(device) {
         device.sayHello();      // prints 'Hello' to device console

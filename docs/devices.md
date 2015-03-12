@@ -30,11 +30,11 @@ When an external application invokes a method on a device object defined by your
 
 One exception to this is in the handling of asynchronous operations. **Organiq does not support the use of callbacks when defining asynchronous methods** in device objects. 
 
-    var device = new Device({
+    var device = {
         doAsync: function(callback) {  // BUG: callbacks not allowed
             _internalAsync(function() { callback(result); });
         }
-    }
+    };
 
 To implement asynchronous methods in device objects, you need to use [promises](http://www.promisesaplus.com) as described below.
 

@@ -4,6 +4,10 @@
 
 It's a framework that allows web applications to easily interact with code running on Tessel microcontrollers.
 
+### Can I use a web browser to interact with my Tessel code?
+
+Yes. Documentation is forthcoming, but try `make browserify` in the package root to generate a .js file that can be used in a browser-based app.
+
 ### What's the difference between the 'organiq' and 'organiq-tessel' packages?
 
 `organiq` is the core NPM package that includes the core SDK, test cases, development server, command line interface, and example programs. For developing browser-based or Node.js applications that use Organiq, this package is all you need.

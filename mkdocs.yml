@@ -12,3 +12,4 @@ pages:
 - [promises.md, "Guide", "Asynchronous operations with Promises"]
 - [cli.md, "Guide", "Using the CLI"]
 - [faq.md, "FAQ"]
+- [configuration.md, "Reference", "organiq.json"]

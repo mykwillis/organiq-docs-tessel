@@ -19,9 +19,9 @@ Will use the HTTP device API interface to return a JSON-formatted list of device
 ### ConnectedDevices
 
 Returns information about all devices connected on the local node. Information is returned as a list of devices, each of which has the following properties:
-# deviceid
-# domain
-# isLocal
+* deviceid
+* domain
+* isLocal
 
 Example request:
     http://organiq.example.com:1340/dapi/:core/ConnectedDevices

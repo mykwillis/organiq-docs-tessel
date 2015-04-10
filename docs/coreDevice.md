@@ -27,6 +27,7 @@ Example request:
     http://organiq.example.com:1340/dapi/:core/ConnectedDevices
     
 Example response:
+
     [{"deviceid":":core","domain":"","isLocal":true},
      {"deviceid":".:mocktesseldevice","domain":".","isLocal":true}]
 
